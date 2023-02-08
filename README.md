@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-3column-preview-card-component-using-css-flex-grid-2GkNL9USJq)
+- [Live Site](https://resplendent-horse-edd009.netlify.app/)
 
 ## My process
 
