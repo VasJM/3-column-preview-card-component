@@ -1,0 +1,166 @@
+/* Custom CSS Styles */
+:root {
+    --clr-primary-01: hsl(31, 77%, 52%);
+    --clr-primary-02: hsl(184, 100%, 22%);
+    --clr-primary-03: hsl(179, 100%, 13%);
+
+    --clr-neutral-200: hsl(0, 0%, 95%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-100-a75: hsla(0, 0%, 100%, 0.75);
+
+    --15px: 0.9375rem;
+    --16px: 1rem;
+    --40px: 2.5rem;
+
+    --ff-base: 'Lexend Deca', sans-serif;
+    --ff-accent: 'Big Shoulders Display', cursive;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Utility Classes */
+.flex-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* General Styles */
+body {
+    background-color: var(--clr-neutral-200);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: var(--15px);
+    display: flex;
+    justify-content: center;
+}
+
+    @media (min-width: 50em) {
+        body {
+            align-items: center;
+        }
+    }
+
+h1 {
+    font-family: var(--ff-accent);
+    font-size: var(--40px);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-200);
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--clr-100-a75);
+}
+
+/* Container Styles */
+.container {
+    margin: 5em 1.25em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    max-width: 40em;
+}
+
+    @media (min-width: 50em) {
+        .container {
+            flex-direction: row;
+            max-width: 62.5em;
+            margin: 0 1.25em;
+        }
+    }
+
+/* Panel Styles */
+.panel {
+    display: grid;
+    gap: 1.75rem;
+    padding: 3.25rem;
+}
+
+.panel--orange {
+    background-color: var(--clr-primary-01);
+}
+
+.panel--cyan {
+    background-color: var(--clr-primary-02);
+}
+
+.panel--darkcyan {
+    background-color: var(--clr-primary-03);
+}
+
+/* Button Styles */
+.btn {
+    border: 3px solid var(--clr-neutral-200);
+    background-color: var(--clr-neutral-200);
+    width: 10em;
+    padding: 0.6em 0;
+    border-radius: 5em;
+}
+
+    @media (min-width: 50em) {
+        .btn {
+            margin-top: 4em;
+        }
+    }
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--orange {
+    color: var(--clr-primary-01);
+}
+
+.btn--orange:hover {
+    color: var(--clr-neutral-200);
+    background-color: var(--clr-primary-01);
+}
+ 
+.btn--cyan {
+    color: var(--clr-primary-02);
+}
+ 
+.btn--cyan:hover {
+    color: var(--clr-neutral-200);
+    background-color: var(--clr-primary-02);
+}
+
+.btn--darkcyan {
+    color: var(--clr-primary-03);
+}
+ 
+.btn--darkcyan:hover {
+    color: var(--clr-neutral-200);
+    background-color: var(--clr-primary-03);
+}
